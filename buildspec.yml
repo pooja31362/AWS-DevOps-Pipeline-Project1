@@ -5,9 +5,10 @@ phases:
         runtime-versions:
             nodejs: 10
         commands:
+            - printenv
             - echo "installing something"
     pre_build:
-        commands: 
+        commands:
             - echo "This is the pre build phase"
     build:
         commands:
